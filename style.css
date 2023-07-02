@@ -1,0 +1,82 @@
+@media (max-width: 767px) {
+  .container {  
+    font-size: 10px;
+  }
+
+  .month {
+    font-size: 20px;
+  }
+
+  .wrapper {  
+    grid-gap: 10px;
+  }
+
+  .week-day {
+    height: 15px;
+  }
+
+  .item {
+    min-width: 50px;  
+  }
+
+  .date {
+    min-height: 80px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .month {
+    font-size: 45px;
+  }
+
+  .wrapper {  
+    grid-gap: 20px;
+  }
+
+  .week-day {
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .item {
+    min-width: 100px;  
+  }
+
+  .date {
+    min-height: 100px;
+    padding: 10px;
+  }
+}
+
+.container {
+  max-width: 1920px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.month {
+  text-align: center;
+}
+
+.wrapper {  
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.item {
+  box-sizing: border-box;  
+  background-color: #d6d5d5;
+}
+
+.week-day {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.sunday {
+  background-color: #6c6c6c;
+}
